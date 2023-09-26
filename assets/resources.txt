@@ -1,0 +1,22 @@
+portfolio-background:
+
+https://www.freepik.com/free-vector/abstract-background-design-black_3462507.htm#query=portfolio%20background&position=27&from_view=keyword&track=ais
+
+
+WEBSITE / PAGE LAYOUT:
+
+HOMEPAGE -  Top left, text that says (my name) (which also acts as a button to get back home), followed by an image of me behind my name.
+         -  Bottom right, panel with two buttons (one says "Graphic Design", and then the other says "Videos" or something along those lines)
+
+GRAPHIC DESIGN PAGE - Top left, basically the same but the text is changed to "Graphic Design", but is not a button this time. Rectangle to the right, until the end. Colour undetermined.
+                      Middle - Where the buttons start, which is when I came up with this cool and epic design of a printer, which is where the images I have made are displayed. 
+                      Underneath the image is a rectangle with the title of the image and a short description of said image. There are three differe printer-like images & descriptions / titles
+                      spread out throughout the span of the middle, middle but down a bit more, and/or middle-left.
+                    - Bottom Right, where the sub-categories are introduced (for "Graphic Design)"- there are 8 sub-categories (still pages), that are all buttons that lead to a different specific page.
+                      The pages, are as follows: "Banners", "game icons", "gamepasses", "Logos", "Photoshops", "Profile Pictures", "UI (which has more sub-categories)"
+
+VIDEOS PAGE -  Top left, basically the same as the second page (Graphic Design), but the text is changed to "Videos".
+                      Middle - Still buttons, which is where I am going to use the same idea/concept as the Printer idea, but have videos sitting in some sort of TV or something related.
+                      Underneath the video is a rectangle with the title of the video and a short description of said video. There are three differe TV-like images & descriptions / titles
+                      spread out throughout the span of the middle, middle but down a bit more, and/or middle-left.
+                    - Bottom Right, where there are different videos to choose from that were made by Logan in the past.
