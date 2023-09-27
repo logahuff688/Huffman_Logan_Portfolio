@@ -1,0 +1,72 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-image: url("../images/portfolio-background.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    background-color: black;
+    height: 17.5%;
+    width: 1920px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.top-left-container {
+    position: relative;
+    top: 20px;
+}
+
+.title-1 {
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: large;
+    text-align: center; 
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-1508%);
+    z-index: 2;
+    margin: 0; 
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+}
+
+.title-1:hover {
+    color: gray;
+}
+
+.profile-photo {
+    border-radius: 25%;
+    width: 100px; 
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1; 
+    box-shadow: 12px 12px 12px black;
+}
+
+.menu {
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    outline-style: outset;
+    outline-color: white;
+}
+
+.menu-link {
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    text-shadow: 12px 12px 12px black;
+}
