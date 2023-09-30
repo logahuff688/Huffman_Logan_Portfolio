@@ -26,17 +26,22 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 20px;
-  justify-content: center;
-  width: 50%;
-  height: 100vh;
+  width: 100%;
   max-width: 400px;
-  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  margin: 0;
+  transform: translateX(-450px);
 }
 
 .image-container img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  margin: 0;
+  transform: translateX(-450px);
 }
 
 .title-1 {
@@ -160,6 +165,31 @@ body {
   transition: 1s;
   color: gray;
   transform: scaleX(5);
+}
+
+.text-container {
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  transform: translateX(50%);
+  color: white;
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.A-Title {
+  transform: translateX(-250px);
+  font-size: xxx-large;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.ContactButton {
+  font-size: xx-large;
+  background-color: black;
+  outline-color: white;
+  outline-style: groove;
+  color: white;
+  text-decoration: none;
 }
 
 /* keyframes *//*# sourceMappingURL=main.css.map */

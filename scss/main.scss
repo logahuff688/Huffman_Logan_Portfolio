@@ -151,6 +151,7 @@ box-shadow: 5px 5px 5px 5px white;
     transform-origin: right;
 }
 
+
 .menu-link-content {
     transition: transform 1s;
     transform-origin: right;
@@ -169,6 +170,34 @@ box-shadow: 5px 5px 5px 5px white;
     color: gray;
     transform: scaleX(5);
 
+}
+
+
+.text-container {
+    position: absolute;
+    top: 25%;
+    left: 20px; 
+    transform: translateX(50%);
+    color: white;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.A-Title {
+    transform: translateX(-250px);
+    font-size: xxx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.ContactButton {
+    font-size: xx-large;
+    background-color: black;
+    outline-color: white;
+    outline-style: groove;
+    color: white;
+    text-decoration: none;
 }
 
 /* keyframes */
