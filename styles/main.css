@@ -184,12 +184,19 @@ body {
 }
 
 .ContactButton {
+  transition: 0.3s;
   font-size: xx-large;
   background-color: black;
   outline-color: white;
   outline-style: groove;
   color: white;
   text-decoration: none;
+}
+
+.ContactButton:hover {
+  color: gray;
+  transition: 0.3s;
+  outline-color: gray;
 }
 
 /* keyframes *//*# sourceMappingURL=main.css.map */

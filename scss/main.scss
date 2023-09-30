@@ -192,6 +192,7 @@ box-shadow: 5px 5px 5px 5px white;
 
 
 .ContactButton {
+    transition: 0.3s;
     font-size: xx-large;
     background-color: black;
     outline-color: white;
@@ -199,5 +200,12 @@ box-shadow: 5px 5px 5px 5px white;
     color: white;
     text-decoration: none;
 }
+
+    .ContactButton:hover {
+        color: gray;
+        transition: 0.3s;
+        outline-color: gray;
+    }
+    
 
 /* keyframes */
