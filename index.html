@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan Huffman</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="js/main.js">
-</head>
-<body>
+  <head>
+    <title>Novo EarBuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="sass/pages/_home.scss">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- link to greensock main library and scroll plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <header class="header-banner">
-        <nav class="menu">
-            <ul>
-                <li><a class="menu-link" href="Graphic-Design.html">GRAPHIC DESIGNS</a></li>
-                <li>
-                    <a href="Videos.html" class="menu-link">VIDEOS</a>
-                    <a class="menu-link" href="About.html">ABOUT</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="top-left-container">
-        <a href="index.html"> <img class="profile-photo" src="images/Logan_Sweater&Peace.jpg" alt="photo of Logan"> </a>
-        <a class="title-1" href="index.html">Logan<br>Huffman</a>
-    </div>
-    <footer class="footer-container">
-        <a href="https://www.linkedin.com/in/logan-huffman-8044b2231/"><img src="images/linkedin-logo.svg" alt="github logo"> </a>
-        <a href="https://github.com/logahuff688"> <img src="images/github-logo.svg" alt="github logo"> </a>
-     </footer>
-</body>
+      <nav class="menu">
+          <ul>
+              <li>
+                  <a class="menu-link" href="About.html">About</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  <div class="top-left-container">
+      <a class="title-1" href="index.html">Novo<br>Earbuds</a>
+  </div>
+  </head>
+  <body>
+    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+      <button class="Hotspot" slot="hotspot-1" data-position="22.114881038306805m 76.41863141465969m 92.72411936367459m" data-normal="0m 3.422854333301474e-8m 0.9999999999999996m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">
+          </div>
+      </button>
+      
+      <button class="Hotspot" slot="hotspot-2" data-position="39.77344034970514m 35.166245058302174m -60.072171234357924m" data-normal="0.9907333466758325m -0.04850912905944068m 0.12686331298842657m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">
+          </div>
+      </button>
+      
+      <button class="Hotspot" slot="hotspot-3" data-position="2.4492803380076666m 10.895113621640228m -85.35108450441453m" data-normal="-0.09319883119990514m 0.7267314834938743m -0.6805698559014823m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">
+          </div>
+      </button>
+      
+      <button class="Hotspot" slot="hotspot-4" data-position="8.209706351369618m -74.79136002933947m 11.903197074480694m" data-normal="0.018820622483499312m -0.18212597696599156m -0.9830950679784314m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">
+          </div>
+      </button>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="images/ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

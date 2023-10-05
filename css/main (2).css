@@ -1,3 +1,36 @@
+body {
+  background-color: black;
+}
+
+model-viewer {
+  transform: translateX(250px);
+  width: auto;
+  max-width: 1200px;
+  height: 450px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.Hotspot {
+  background: url(../images/hotspot.svg) center no-repeat;
+  border: 0px;
+  width: 45px;
+  height: 38px;
+  display: block; /* Change from 'none' to 'block' to make them visible */
+  position: absolute; /* Add this to position the buttons */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Add this to change cursor on hover */
+}
+
+.Hotspot:hover {
+  transform: scale(1.1); /* Add a hover effect to scale the button */
+}
+
+.Hotspot:not([data-visible]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .HotspotAnnotation {
   visibility: hidden;
   background: #fff;
@@ -14,9 +47,24 @@
   padding: 0.5em 1em;
   position: absolute;
   top: 50%;
-  width: -moz-max-content;
   width: max-content;
   text-align: left;
+}
+
+.HotspotAnnotation p {
+  color: #333;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.HotspotAnnotation h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+model-viewer::part(default-progress-bar) {
+  height: 30px;
+  background-color: #E89B36;
 }
 
 /* AR Rules */
@@ -52,23 +100,6 @@
 #ar-button:focus-visible {
   outline: 1px solid #4285f4;
 }
-
-@keyframes circle {
-  from {
-    transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
-  }
-}
-@keyframes elongate {
-  from {
-    transform: translateX(100px);
-  }
-  to {
-    transform: translateX(-100px);
-  }
-}
 model-viewer > #ar-prompt {
   position: absolute;
   left: 50%;
@@ -85,14 +116,6 @@ model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
 
-#about-us {
-  margin-bottom: 40px;
-}
-
-#founders section {
-  margin-bottom: 40px;
-}
-
 .header-banner {
   background-color: black;
   height: 17.5%;
@@ -101,11 +124,6 @@ model-viewer > #ar-prompt > img {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.top-left-container {
-  position: relative;
-  top: 20px;
 }
 
 .image-container {
@@ -131,79 +149,26 @@ model-viewer > #ar-prompt > img {
   transform: translateX(-450px);
 }
 
+
+
 .title-1 {
   color: white;
   text-shadow: 5px 5px 5px black;
   font-size: 32px;
-  text-align: left;
+  text-align: left; 
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-715%);
+  left: 50%; 
+  transform: translateX(-880%);
   z-index: 2;
-  margin: 0;
+  margin: 0; 
   text-decoration: none;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   transition: 0.5s;
 }
 
 .title-1:hover {
   color: gray;
-}
-
-.title-2 {
-  color: white;
-  text-shadow: 5px 5px 5px black;
-  font-size: 48px;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-300%);
-  z-index: 999;
-  margin: 0;
-  text-decoration: none;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  transition: 0.5s;
-}
-
-.title-2:hover {
-  color: gray;
-}
-
-.title-3 {
-  color: white;
-  text-shadow: 5px 5px 5px black;
-  font-size: 48px;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-625%);
-  z-index: 999;
-  margin: 0;
-  text-decoration: none;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  transition: 0.5s;
-}
-
-.title-3:hover {
-  color: gray;
-}
-
-.profile-photo {
-  border-radius: 25%;
-  width: 126px;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  z-index: 1;
-  transition: 1s;
-}
-
-.profile-photo:hover {
-  cursor: pointer;
-  box-shadow: 5px 5px 5px 5px white;
 }
 
 .menu {
@@ -229,12 +194,13 @@ model-viewer > #ar-prompt > img {
   color: white;
   font-size: xx-large;
   background-color: black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: inline-block;
   text-shadow: 12px 12px 12px black;
   transition: 1s;
   transform-origin: right;
 }
+
 
 .menu-link-content {
   transition: transform 1s;
@@ -248,27 +214,32 @@ model-viewer > #ar-prompt > img {
   transition: 1s;
 }
 
+
 .menu a:hover {
   transition: 1s;
   color: gray;
   transform: scaleX(5);
+
 }
+
 
 .text-container {
   position: absolute;
   top: 25%;
-  left: 20px;
+  left: 20px; 
   transform: translateX(50%);
   color: white;
   font-size: 24px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .A-Title {
   transform: translateX(-250px);
   font-size: xxx-large;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
+
+
 
 .ContactButton {
   transition: 0.3s;
@@ -280,8 +251,37 @@ model-viewer > #ar-prompt > img {
   text-decoration: none;
 }
 
-.ContactButton:hover {
-  color: gray;
-  transition: 0.3s;
-  outline-color: gray;
-}/*# sourceMappingURL=main.css.map */
+  .ContactButton:hover {
+      color: gray;
+      transition: 0.3s;
+      outline-color: gray;
+  }
+
+#about-us {
+  margin-bottom: 40px;
+}
+
+#founders section {
+  margin-bottom: 40px;
+}
+
+
+/* keyframes */
+
+@keyframes circle {
+  from {
+    transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+@keyframes elongate {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
