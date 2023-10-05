@@ -1,96 +1,9 @@
-.HotspotAnnotation {
-  visibility: hidden;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  left: calc(100% + 1em);
-  max-width: 300px;
-  overflow-wrap: break-word;
-  padding: 0.5em 1em;
-  position: absolute;
-  top: 50%;
-  width: -moz-max-content;
-  width: max-content;
-  text-align: left;
-}
-
-/* AR Rules */
-#ar-button {
-  background-image: url(../images/ar_icon.png);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: 12px 50%;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  bottom: 16px;
-  padding: 0px 16px 0px 40px;
-  font-family: Roboto Regular, Helvetica Neue, sans-serif;
-  font-size: 14px;
-  color: #4285f4;
-  height: 36px;
-  line-height: 36px;
-  border-radius: 18px;
-  border: 1px solid #DADCE0;
-}
-
-#ar-button:active {
-  background-color: #E8EAED;
-}
-
-#ar-button:focus {
-  outline: none;
-}
-
-#ar-button:focus-visible {
-  outline: 1px solid #4285f4;
-}
-
-@keyframes circle {
-  from {
-    transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
-  }
-}
-@keyframes elongate {
-  from {
-    transform: translateX(100px);
-  }
-  to {
-    transform: translateX(-100px);
-  }
-}
-model-viewer > #ar-prompt {
-  position: absolute;
-  left: 50%;
-  bottom: 60px;
-  animation: elongate 2s infinite ease-in-out alternate;
-  display: none;
-}
-
-model-viewer[ar-status=session-started] > #ar-prompt {
-  display: block;
-}
-
-model-viewer > #ar-prompt > img {
-  animation: circle 4s linear infinite;
-}
-
-#about-us {
-  margin-bottom: 40px;
-}
-
-#founders section {
-  margin-bottom: 40px;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-image: url("../images/portfolio-background.jpg");
+  margin: 0;
+  padding: 0;
 }
 
 .header-banner {
@@ -159,7 +72,7 @@ model-viewer > #ar-prompt > img {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-300%);
+  transform: translateX(-250%);
   z-index: 999;
   margin: 0;
   text-decoration: none;
@@ -179,7 +92,7 @@ model-viewer > #ar-prompt > img {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-625%);
+  transform: translateX(-600%);
   z-index: 999;
   margin: 0;
   text-decoration: none;
@@ -188,6 +101,26 @@ model-viewer > #ar-prompt > img {
 }
 
 .title-3:hover {
+  color: gray;
+}
+
+.title-4 {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-size: 48px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-630%);
+  z-index: 2;
+  margin: 0;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: 0.5s;
+}
+
+.title-4:hover {
   color: gray;
 }
 
@@ -262,10 +195,13 @@ model-viewer > #ar-prompt > img {
   color: white;
   font-size: 24px;
   font-family: "Courier New", Courier, monospace;
+  transform: translateX(-5px);
+  transform: translateY(100px);
 }
 
 .A-Title {
   transform: translateX(-250px);
+  transform: translateY(-115px);
   font-size: xxx-large;
   font-family: "Courier New", Courier, monospace;
 }
@@ -284,4 +220,32 @@ model-viewer > #ar-prompt > img {
   color: gray;
   transition: 0.3s;
   outline-color: gray;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.footer-container {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 9%;
+  width: 100%;
+}
+
+.footer-container img {
+  transition: 0.5s;
+  width: 4.5%;
+  transform: translateX(-845px);
+}
+
+.footer-container img:hover {
+  width: 5%;
+  transition: 0.5s;
+  outline-style: outset;
+  outline-width: 12px;
+  outline-color: white;
+  border-radius: 75px;
+}
+
+/* keyframes *//*# sourceMappingURL=main.css.map */
