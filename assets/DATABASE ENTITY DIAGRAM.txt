@@ -1,0 +1,20 @@
+DATABASE ENTITY DIAGRAM
+
+Graphic Designs
+	       -> banners
+               -> game icons
+               -> gamepasses
+               -> logos
+               -> photoshops
+               -> profile pictures
+               -> thumbnails
+               -> UI
+	               -> Assets
+	               -> menus
+
+
++------------------+
+|
+|  Videos
+|
++------------------+
