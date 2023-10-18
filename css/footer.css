@@ -1,0 +1,40 @@
+.footer {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three equal columns */
+  grid-gap: 10px;
+  /* Adjust the gap between columns as needed */
+  align-items: center;
+  /* Vertically center the items */
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 0 1rem;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: text-shadow 0.25s;
+}
+
+.footer-links a:hover {
+  text-shadow: 0 0 10px white;
+}
+
+.footer p {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 420px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

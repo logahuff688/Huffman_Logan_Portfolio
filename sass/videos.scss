@@ -1,0 +1,67 @@
+body {
+    background-image: url("/Images/portfolio-background.jpg");
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  main {
+    color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: rgba(33, 33, 33, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    width: max-content;
+    max-width: 90%;
+    box-sizing: border-box;
+    max-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+  
+  main::-webkit-scrollbar {
+    background-color: #333;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background-color: #555;
+  }
+  
+  main::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  main video {
+    width: 24rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  main video:hover {
+    box-shadow: 0 0 10px white
+  }
+  
+  @media (max-width: 768px) {
+    main video {
+      width: 22rem;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    main video {
+      width: 16rem;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    main video {
+      width: 12rem;
+      margin: 0;
+    }
+  }

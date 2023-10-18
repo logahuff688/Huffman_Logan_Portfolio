@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan Huffman</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="js/main.js">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Logan Huffman</title>
 </head>
+
 <body>
-    <header class="header-banner">
-        <nav class="menu">
-            <ul>
-                <li><a class="menu-link" href="Graphic-Design.html">GRAPHIC DESIGNS</a></li>
-                <li>
-                    <a href="Videos.html" class="menu-link">VIDEOS</a>
-                    <a class="menu-link" href="About.html">ABOUT</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="top-left-container">
-        <a href="index.html"> <img class="profile-photo" src="images/Logan_Sweater&Peace.jpg" alt="photo of Logan"> </a>
-        <a class="title-1" href="index.html">Logan<br>Huffman</a>
+  <nav class="navbar">
+    <div class="name">
+      <img src="/Images/Logan_Sweater_Peace.jpg" alt="Photo of Logan Huffman" />
+      <a href="/index.html">Logan<br />Huffman</a>
     </div>
-    <footer class="footer-container">
-        <a href="https://www.linkedin.com/in/logan-huffman-8044b2231/"><img src="images/linkedin-logo.svg" alt="github logo"> </a>
-        <a href="https://github.com/logahuff688"> <img src="images/github-logo.svg" alt="github logo"> </a>
-     </footer>
+    <div class="links">
+      <a href="/graphics-designs.html">Graphics Designs</a>
+      <a href="/videos.html">Videos</a>
+    </div>
+    <button id="menu-toggle" class="menu-icon">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="menu" id="nav-menu">
+      <h1>Navigate</h1>
+      <a href="/graphics-design.html">Graphic Designs</a>
+      <a href="/videos.html">Videos</a>
+      <a id="close-btn">Close</a>
+    </div>
+  </nav>
+  <main>
+    <h1>Hey, I'm Logan! 👋</h1>
+    <p>
+      Hey there! I'm Logan Huffman, a creative based in Wingham, Ontario,
+      Canada. <br />
+      I have a passion for visual storytelling through graphic design,
+      videography, photography, and video editing. <br />
+      With a keen eye for detail and a love for capturing the essence of every
+      moment, I bring a unique blend of creativity and technical skill to
+      every project. <br />
+      Whether it's crafting eye-catching graphics or bringing stories to life
+      through multimedia, I'm dedicated to delivering compelling and visually
+      stunning work. <br />
+      <br />
+      Let's collaborate and turn your ideas into captivating visuals!
+    </p>
+    <a href="contact.html" class="contact-button">Contact Me <i class="fa-solid fa-paper-plane"></i></a>
+  </main>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://www.github.com/logahuff688" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/logan-huffman-8044b2231/" target="_blank"><i class=" fa-brands
+        fa-linkedin"></i></a>
+      <a href="mailto:lexmark7766@gmail.com" target="_blank"><i class=" fa-solid fa-envelope"></i></a>
+    </div>
+    <p>Logan Huffman &copy; 2023</p>
+  </footer>
 </body>
+
 </html>

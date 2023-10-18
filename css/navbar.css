@@ -1,0 +1,175 @@
+.navbar {
+  background-color: rgb(36, 36, 36);
+  height: 6rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .name {
+  display: flex;
+  align-items: center;
+}
+
+.name a {
+  transition: 0.5s;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  padding: 0;
+  margin: 0 0 0 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.navbar .links a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: 2px solid white;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.navbar .links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.name a:hover {
+  transition: 0.5s;
+  color: gray;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar .links a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .links {
+    display: none;
+  }
+
+  /* Default styling for the menu icon */
+  .menu-icon {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(33, 33, 33, 0.95);
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s;
+  }
+
+  .menu h1 {
+    color: white;
+    padding: 0;
+    margin: 3rem 0;
+    font-size: 48px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+    width: 20rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 2px solid white;
+    font-size: 24px;
+    margin: 0.5rem 0;
+  }
+
+  .menu #close-btn {
+    margin-top: 2rem;
+  }
+
+  .menu a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Styling for the bars in the hamburger icon */
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    transition: width 0.25s, height 0.25s;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    height: 4rem;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .navbar img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .menu h1 {
+    font-size: 40px;
+    margin: 2rem 0;
+  }
+
+  .menu a {
+    width: 10rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .navbar img {
+    width: 2rem;
+    height: 2rem;
+  }
+}

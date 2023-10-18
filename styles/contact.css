@@ -1,0 +1,98 @@
+body {
+  background-image: url("/Images/portfolio-background.jpg");
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
+  background-color: rgba(33, 33, 33, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+  font-size: 48px;
+}
+
+main p {
+  font-size: 24px;
+  padding: 2rem 0;
+}
+
+#contact-button {
+  text-decoration: none;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border: 2px solid white;
+  transition: color 0.5s, background-color 0.5s;
+  cursor: pointer;
+}
+
+#contact-button:hover {
+  background-color: white;
+  color: black;
+}
+
+main .contact-button {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  padding: 0.5rem;
+  border: 2px solid white;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+main .contact-button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main p {
+    font-size: 20px;
+  }
+  main .contact-button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  main h1 {
+    font-size: 32px;
+  }
+  main p {
+    font-size: 16px;
+  }
+  main .contact-button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 300px) {
+  main h1 {
+    font-size: 24px;
+  }
+  main p {
+    font-size: 12px;
+  }
+  main .contact-button {
+    font-size: 12px;
+  }
+} /*# sourceMappingURL=contact.css.map */

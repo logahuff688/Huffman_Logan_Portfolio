@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/contact.css" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="name">
+      <img src="/Images/Logan_Sweater_Peace.jpg" alt="Photo of Logan Huffman" />
+      <a href="/index.html">Contact</a>
+    </div>
+    <div class="links">
+      <a href="/index.html">BACK</a>
+    </div>
+    <button id="menu-toggle" class="menu-icon">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="menu" id="nav-menu">
+      <h1>Navigate</h1>
+      <a href="/graphics-design.html">Graphics Design</a>
+      <a href="/videos.html">Videos</a>
+      <a id="close-btn">Close</a>
+    </div>
+  </nav>
+  <main>
+    <h1>CONTACT </h1>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="contactName" name="name" required><br><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="contactEmail" name="email" required><br><br>
+  
+      <label for="message">Message:</label><br>
+      <textarea id="contactMessage" name="message" rows="4" required></textarea><br><br>
+  
+      <input type="submit" value="Submit" id="contact-button">
+  </form>
+  </main>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://www.github.com/logahuff688" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/logan-huffman-8044b2231/" target="_blank"><i class=" fa-brands
+        fa-linkedin"></i></a>
+      <a href="mailto:lexmark7766@gmail.com" target="_blank"><i class=" fa-solid fa-envelope"></i></a>
+    </div>
+    <p>Logan Huffman &copy; 2023</p>
+  </footer>
+</body>
+
+</html>
