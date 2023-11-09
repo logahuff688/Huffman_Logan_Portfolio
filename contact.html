@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/grid.css"> <!-- Link to the external CSS file for the grid -->
   <title>Contact</title>
 </head>
-
 <body>
   <nav class="navbar">
     <div class="name">
@@ -36,7 +35,7 @@
       <a id="close-btn">Close</a>
     </div>
   </nav>
-  <main>
+  <main class="grid-container">
     <h1>CONTACT </h1>
     <form id="contactForm">
       <label for="name">Name:</label>
@@ -49,7 +48,7 @@
       <textarea id="contactMessage" name="message" rows="4" required></textarea><br><br>
   
       <input type="submit" value="Submit" id="contact-button">
-  </form>
+    </form>
   </main>
   <footer class="footer">
     <div class="footer-links">
@@ -62,5 +61,4 @@
   </footer>
 </body>
 <script src="js/menu.js"></script>
-
 </html>

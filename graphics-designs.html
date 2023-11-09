@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/grid.css"> <!-- Link to the external CSS file for the grid -->
     <title>Graphics Designs</title>
 </head>
-
 <body>
     <nav class="navbar">
         <div class="name">
@@ -37,10 +36,9 @@
             <a id="close-btn">Close</a>
         </div>
     </nav>
-    <main>
+    <main class="grid-container">
         <div class="category-list">
             <button id="all-button">Show All</button>
-            <button id="thumbnails-button">Thumbnails</button>
             <button id="pfps-button">PFPs</button>
             <button id="icons-button">Icons</button>
             <button id="gamepasses-button">Gamepasses</button>
@@ -52,20 +50,238 @@
             <button id="ui-menus-button">UI Menus</button>
         </div>
         <div class="image-gallery" id="gallery">
+            <img src="/Images/Thumbnails/thumbnail_1.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_2.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_3.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_4.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_5.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_6.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_7.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_8.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_9.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_10.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_11.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_12.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_13.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_14.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_15.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_16.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_17.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_18.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_19.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_20.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_21.png" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_22.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_23.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_24.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_25.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_26.jpg" alt="" data-tag="thumbnail">
+            <img src="/Images/Thumbnails/thumbnail_27.png" alt="" data-tag="thumbnail">
 
+            <img src="/Images/PFPs/pfp_1.png" alt="" data-tag="pfp">
+            <img src="/Images/PFPs/pfp_2.png" alt="" data-tag="pfp">
+            <img src="/Images/PFPs/pfp_3.png" alt="" data-tag="pfp">
+            <img src="/Images/PFPs/pfp_4.png" alt="" data-tag="pfp">
+            <img src="/Images/PFPs/pfp_5.png" alt="" data-tag="pfp">
+            <img src="/Images/PFPs/pfp_6.png" alt="" data-tag="pfp">
+
+            <img src="/Images/Icons/icon_1.png" alt="" data-tag="icon">
+            <img src="/Images/Icons/icon_2.png" alt="" data-tag="icon">
+            <img src="/Images/Icons/icon_3.png" alt="" data-tag="icon">
+            <img src="/Images/Icons/icon_4.jpg" alt="" data-tag="icon">
+
+            <img src="/Images/Gamepasses/gamepass_1.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_2.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_3.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_4.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_5.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_6.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_7.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_8.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_9.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_10.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_11.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_12.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_13.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_14.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_15.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_16.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_17.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_18.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_19.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_20.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_21.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_22.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_23.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_24.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_25.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_26.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_27.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_28.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_29.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_30.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_31.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_32.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_33.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_34.png" alt="" data-tag="gamepass">
+            <img src="/Images/Gamepasses/gamepass_35.png" alt="" data-tag="gamepass">
+
+            <img src="/Images/Logos/logo_1.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_2.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_3.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_4.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_5.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_6.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_7.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_8.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_9.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_10.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_11.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_12.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_13.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_14.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_15.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_16.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_17.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_18.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_19.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_20.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_21.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_22.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_23.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_24.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_25.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_26.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_27.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_28.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_29.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_30.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_31.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_32.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_33.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_34.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_35.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_36.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_37.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_38.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_39.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_40.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_41.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_42.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_43.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_44.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_45.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_46.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_47.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_48.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_49.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_50.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_51.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_52.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_53.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_54.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_55.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_56.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_57.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_58.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_59.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_60.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_61.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_62.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_63.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_64.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_65.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_66.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_67.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_68.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_69.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_70.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_71.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_72.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_73.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_74.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_75.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_76.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_77.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_78.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_79.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_80.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_81.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_82.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_83.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_84.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_85.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_86.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_87.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_88.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_89.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_90.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_91.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_92.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_93.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_94.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_95.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_96.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_97.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_98.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_99.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_100.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_101.png" alt="" data-tag="logo">
+            <img src="/Images/Logos/logo_102.png" alt="" data-tag="logo">
+
+            <img src="/Images/Banners/banner_1.png" alt="" data-tag="banner">
+            <img src="/Images/Banners/banner_2.png" alt="" data-tag="banner">
+
+            <img src="/Images/Misc/misc_1.png" alt="" data-tag="misc">
+            <img src="/Images/Misc/misc_2.png" alt="" data-tag="misc">
+            <img src="/Images/Misc/misc_3.png" alt="" data-tag="misc">
+            <img src="/Images/Misc/misc_4.png" alt="" data-tag="misc">
+
+            <img src="/Images/Photoshops/photoshop_1.png" alt="" data-tag="photoshop">
+
+            <img src="/Images/Assets/asset_1.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_2.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_3.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_4.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_5.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_6.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_7.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_8.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_9.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_10.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_11.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_12.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_13.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_14.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_15.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_16.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_17.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_18.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_19.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_20.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_21.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_22.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_23.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_24.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_25.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_26.png" alt="" data-tag="asset">
+            <img src="/Images/Assets/asset_27.png" alt="" data-tag="asset">
+
+            <img src="/Images/Menus/menu_1.png" alt="" data-tag="menu">
+            <img src="/Images/Menus/menu_2.png" alt="" data-tag="menu">
+            <img src="/Images/Menus/menu_3.png" alt="" data-tag="menu">
+            <img src="/Images/Menus/menu_4.png" alt="" data-tag="menu">
         </div>
-
     </main>
     <footer class="footer">
         <div class="footer-links">
             <a href="https://www.github.com/logahuff688" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/logan-huffman-8044b2231/" target="_blank"><i class=" fa-brands
-              fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/logan-huffman-8044b2231/" target="_blank"><i class=" fa-brands fa-linkedin"></i></a>
             <a href="mailto:lexmark7766@gmail.com" target="_blank"><i class=" fa-solid fa-envelope"></i></a>
         </div>
         <p>Logan Huffman &copy; 2023</p>
     </footer>
 </body>
+<script src="js/gallery.js"></script>
 <script src="js/menu.js"></script>
-
 </html>
